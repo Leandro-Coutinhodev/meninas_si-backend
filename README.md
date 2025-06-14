@@ -45,7 +45,7 @@ $ python run.py
 No arquivo ".env" altere o conteúdo das variáveis de ambiente de acordo com as credenciais da sua base de dados:
 ```python
 DB_HOST=localhost
-DB_PORT=porta do seu servidor de banco de dados
+DB_PORT=3306 padrão do mysql ou outra porta que você definiu
 DB_NAME=nome da base
 DB_USER=usuário
 DB_PASSWORD=senha
