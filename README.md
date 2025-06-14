@@ -64,7 +64,7 @@ Cria um novo administrador.
 Exemplo de JSON:
 ```json
 {
-  "username": "@teste",
+  	"username": "@teste",
 	"email": "teste@gmail.com",
 	"password": "teste123",
 	"created_time": "2025-06-12 00:00:00"
@@ -97,7 +97,7 @@ PUT /api/admin/1
 
 ```json
 {
-  "username": "@admin",
+  	"username": "@admin",
 	"email": "admin@gmail.com",
 	"password": "admin@admin",
 	"created_time": "2025-06-12 00:00:00"
