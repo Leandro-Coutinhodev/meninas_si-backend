@@ -20,6 +20,71 @@ Serialização feita com **Marshmallow**, arquitetura separada por camadas (cont
 
 ---
 
+## 📁 Estrutura do Projeto
+
+```
+meninas_si-backend/
+├── app/
+│   ├── controllers/
+│   │   ├── admin_controller.py
+│   │   ├── event_controller.py
+│   │   ├── member_controller.py
+│   │   ├── short_course_controller.py
+│   │   └── workshop_controller.py
+│   │
+│   ├── models/
+│   │   ├── admin.py
+│   │   ├── event.py
+│   │   ├── member.py
+│   │   ├── short_course.py
+│   │   └── workshop.py
+│   │
+│   ├── schemas/
+│   │   ├── admin_schema.py
+│   │   ├── event_schema.py
+│   │   ├── member_schema.py
+│   │   ├── short_course_schema.py
+│   │   └── workshop_schema.py
+│   │
+│   ├── services/
+│   │   ├── admin_service.py
+│   │   ├── event_service.py
+│   │   ├── member_service.py
+│   │   ├── short_course_service.py
+│   │   └── workshop_service.py
+│   │
+│   ├── __init__.py
+│   ├── config.py
+│   └── extensions.py
+│
+├── .env
+├── requirements.txt
+├── run.py
+└── README.md
+```
+
+### 📄 Finalidade dos Arquivos
+
+#### `app/`
+Pasta principal da aplicação Flask.
+
+- `controllers/`: define as rotas e os controladores de cada entidade.
+- `models/`: contém os modelos do banco de dados com SQLAlchemy.
+- `schemas/`: serializadores e validadores com Marshmallow.
+- `services/`: lógica de negócio, manipulação dos dados.
+- `config.py`: configurações da aplicação.
+- `extensions.py`: inicialização de extensões Flask (DB, Marshmallow, etc).
+- `__init__.py`: inicialização da app Flask.
+
+#### `.env`
+Contém variáveis de ambiente, como dados de conexão com o banco de dados.
+
+#### `requirements.txt`
+Lista das bibliotecas necessárias para rodar o projeto.
+
+#### `run.py`
+Arquivo principal que executa o servidor Flask.
+
 ## 🔧 Instalação
 
 ```bash
