@@ -41,7 +41,7 @@ $ pip install -r requirements.txt
 # Execute a API
 $ python run.py
 ```
-##📌 Endpoints principais
+## 📌 Endpoints principais
 🔹 Admin
 GET /admin
 
