@@ -40,3 +40,47 @@ $ pip install -r requirements.txt
 
 # Execute a API
 $ python run.py
+```
+##📌 Endpoints principais
+🔹 Admin
+GET /admin
+
+Retorna todos os administradores.
+POST /admin
+
+Cria um novo administrador.
+
+Exemplo de JSON:
+```json
+{
+  "name": "Ana Silva",
+  "email": "ana@exemplo.com"
+}
+```
+Fluxo interno:
+
+    O JSON é recebido pelo controller via request.get_json().
+
+    Os dados são validados e desserializados pelo AdminSchema com admin_schema.load(data).
+
+    O objeto Admin é persistido no banco via SQLAlchemy.
+
+    A resposta é retornada com admin_schema.jsonify(admin).
+
+GET /admin/<id>
+
+Retorna os dados de um administrador específico.
+PUT /admin/<id>
+
+Atualiza os dados de um administrador.
+
+Exemplo de JSON:
+```json
+{
+  "name": "Ana Paula",
+  "email": "ana.paula@exemplo.com"
+}
+```
+DELETE /admin/<id>
+
+Remove o administrador.
