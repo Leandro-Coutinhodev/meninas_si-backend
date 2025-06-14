@@ -118,11 +118,12 @@ DB_PASSWORD=senha
 ```
 ## 📌 Endpoints principais
 🔹 Admin
-GET /api/admin
+
+#### GET `/api/admin
 
 Retorna todos os administradores.
 
-POST /api/admin
+#### POST `/api/admin`
 
 Cria um novo administrador.
 
@@ -145,11 +146,11 @@ Fluxo interno:
 
     A resposta é retornada com admin_schema.jsonify(admin).
 
-GET /api/admin/<id_admin>
+#### GET `/api/admin/<id_admin>`
 
 Retorna os dados de um administrador específico.
 
-PUT /api/admin/<id_admin>
+#### PUT `/api/admin/<id_admin>`
 
 Atualiza os dados de um administrador.
 
@@ -158,7 +159,7 @@ Exemplo de JSON:
 Supondo que executamos o exemplo de json na rota POST /api/admin para criar um novo administrador, e que esse seja o primeiro registro na base de dados, então receberá id_admin: 1 .
 Vamos atualizar esse registro executando o seguinte endpoint:
 
-PUT /api/admin/1
+#### PUT `/api/admin/1`
 
 ```json
 {
@@ -170,6 +171,6 @@ PUT /api/admin/1
 ```
 Ao executar atualizamos o campo "password" de "admin123" para "admin@admin"
 
-DELETE /api/admin/<id_admin>
+#### DELETE `/api/admin/<id_admin>
 
 Remove o administrador.
