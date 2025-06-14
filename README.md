@@ -56,6 +56,7 @@ DB_PASSWORD=senha
 GET /admin
 
 Retorna todos os administradores.
+
 POST /admin
 
 Cria um novo administrador.
