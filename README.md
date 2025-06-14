@@ -171,6 +171,6 @@ Vamos atualizar esse registro executando o seguinte endpoint:
 ```
 Ao executar atualizamos o campo "password" de "admin123" para "admin@admin"
 
-#### DELETE `/api/admin/<id_admin>
+#### DELETE `/api/admin/<id_admin>`
 
 Remove o administrador.
