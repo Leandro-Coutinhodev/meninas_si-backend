@@ -78,10 +78,10 @@ Fluxo interno:
 
     A resposta é retornada com admin_schema.jsonify(admin).
 
-GET /admin/<id>
+GET /admin/<id_admin>
 
 Retorna os dados de um administrador específico.
-PUT /admin/<id>
+PUT /admin/<id_admin>
 
 Atualiza os dados de um administrador.
 
@@ -92,6 +92,6 @@ Exemplo de JSON:
   "email": "ana.paula@exemplo.com"
 }
 ```
-DELETE /admin/<id>
+DELETE /admin/<id_admin>
 
 Remove o administrador.
