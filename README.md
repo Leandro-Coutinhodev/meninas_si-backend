@@ -45,6 +45,13 @@ meninas_si-backend/
 │   │   ├── member_schema.py
 │   │   ├── short_course_schema.py
 │   │   └── workshop_schema.py
+|   |
+├── routes/
+│   │   ├── admin_routes.py
+│   │   ├── event_routes.py
+│   │   ├── member_routes.py
+│   │   ├── short_course_routes.py
+│   │   └── workshop_routes.py
 │   │
 │   ├── services/
 │   │   ├── admin_service.py
