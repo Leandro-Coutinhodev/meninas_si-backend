@@ -45,8 +45,8 @@ meninas_si-backend/
 │   │   ├── member_schema.py
 │   │   ├── short_course_schema.py
 │   │   └── workshop_schema.py
-|   |
-├── routes/
+│   │
+│   ├── routes/
 │   │   ├── admin_routes.py
 │   │   ├── event_routes.py
 │   │   ├── member_routes.py
@@ -75,9 +75,10 @@ meninas_si-backend/
 #### `app/`
 Pasta principal da aplicação Flask.
 
-- `controllers/`: define as rotas e os controladores de cada entidade.
+- `controllers/`: define os métodos responsáveis pela inserção, retorno, atualização e exclusão dos dados de cada entidade.
 - `models/`: contém os modelos do banco de dados com SQLAlchemy.
 - `schemas/`: serializadores e validadores com Marshmallow.
+- `routes/`: define as rotas/endpoints responsáveis pela chamada dos métodos em `controllers/` de cada entidade.
 - `services/`: lógica de negócio, manipulação dos dados.
 - `config.py`: configurações da aplicação.
 - `extensions.py`: inicialização de extensões Flask (DB, Marshmallow, etc).
