@@ -41,6 +41,16 @@ $ pip install -r requirements.txt
 # Execute a API
 $ python run.py
 ```
+
+No arquivo ".env" altere o conteúdo das variáveis de ambiente de acordo com as credenciais da sua base de dados:
+```python
+DB_HOST=localhost
+DB_PORT=porta do seu servidor de banco de dados
+DB_NAME=nome da base
+DB_USER=usuário
+DB_PASSWORD=senha
+
+```
 ## 📌 Endpoints principais
 🔹 Admin
 GET /admin
