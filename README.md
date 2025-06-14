@@ -87,6 +87,16 @@ Pasta principal da aplicação Flask.
 #### `.env`
 Contém variáveis de ambiente, como dados de conexão com o banco de dados.
 
+No arquivo ".env" altere o conteúdo das variáveis de ambiente de acordo com as credenciais da sua base de dados:
+```python
+DB_HOST=localhost
+DB_PORT=3306 padrão do mysql ou outra porta que você definiu
+DB_NAME=nome da base
+DB_USER=usuário
+DB_PASSWORD=senha
+
+```
+
 #### `requirements.txt`
 Lista das bibliotecas necessárias para rodar o projeto.
 
@@ -115,15 +125,6 @@ $ pip install -r requirements.txt
 $ python run.py
 ```
 
-No arquivo ".env" altere o conteúdo das variáveis de ambiente de acordo com as credenciais da sua base de dados:
-```python
-DB_HOST=localhost
-DB_PORT=3306 padrão do mysql ou outra porta que você definiu
-DB_NAME=nome da base
-DB_USER=usuário
-DB_PASSWORD=senha
-
-```
 ## 📌 Endpoints principais
 🔹 Admin
 
