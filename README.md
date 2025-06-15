@@ -5,7 +5,7 @@ API desenvolvida com **Flask** e **MySQL** para gerenciamento de:
 - Membros
 - Eventos
 - Workshops
-- Cursos de curta duração
+- Minicursos
 
 Serialização feita com **Marshmallow**, arquitetura separada por camadas (controllers, services, models, schemas).
 
@@ -128,7 +128,7 @@ $ python run.py
 ## 📌 Endpoints principais
 🔹 Admin
 
-#### GET `/api/admin
+#### GET `/api/admin`
 
 Retorna todos os administradores.
 
@@ -172,13 +172,13 @@ Vamos atualizar esse registro executando o seguinte endpoint:
 
 ```json
 {
-  	"username": "@admin",
-	"email": "admin@gmail.com",
-	"password": "admin@admin",
+  	"username": "@teste",
+	"email": "teste@gmail.com",
+	"password": "teste@teste",
 	"created_time": "2025-06-12 00:00:00"
 }
 ```
-Ao executar atualizamos o campo "password" de "admin123" para "admin@admin"
+Ao executar atualizamos o campo "password" de "teste123" para "teste@teste"
 
 #### DELETE `/api/admin/<id_admin>`
 
